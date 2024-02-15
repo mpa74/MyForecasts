@@ -1,0 +1,10 @@
+{
+	"profiles": {
+		"MyForecasts.Windows (Unpackaged)": {
+			"commandName": "Project"
+		},
+		"MyForecasts.Windows (Package)": {
+			"commandName": "MsixPackage"
+		}
+	}
+}
