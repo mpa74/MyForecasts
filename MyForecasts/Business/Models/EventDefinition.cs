@@ -8,9 +8,9 @@ using static MyForecasts.Business.Enums.Events;
 namespace MyForecasts.Business.Models;
 public class EventDefinition
 {
-    public string EventId { get; set; }
+    public string EventId { get; set; } = Guid.NewGuid().ToString();
     public string EventName { get; set; } = string.Empty;
-    public string EventDescription { get; set; }
+    public string EventDescription { get; set; } = string.Empty;
     public EventType EventType { get; set; } = EventType.Defaut;
 
     /// <summary>
@@ -18,6 +18,11 @@ public class EventDefinition
     /// </summary>
     public double Interval { get; set; }
     public IntervalType InType { get; set; }
+
+    /// <summary>
+    /// Дата первого срабатывания евента
+    /// </summary>
+    public DateTime InitialDate {  get; set; } 
     /// <summary>
     /// Изменение значения на каждом интервале
     /// </summary>
