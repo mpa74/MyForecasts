@@ -57,6 +57,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyForecasts.DataContracts\MyForecasts.DataContracts.csproj" />
+    <ProjectReference Include="..\MyForecasts.Presentation\MyForecasts.Presentation.csproj" />
   </ItemGroup>
 
   <ItemGroup>

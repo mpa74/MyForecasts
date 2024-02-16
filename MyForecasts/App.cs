@@ -1,3 +1,5 @@
+using CsMarkup2Example = MyForecasts.Presentation.Example;
+
 namespace MyForecasts;
 
 public class App : Application
@@ -69,7 +71,7 @@ public class App : Application
                     // TODO: Register your services
                     //services.AddSingleton<IMyService, MyService>();
                 })
-                .UseNavigation(RegisterRoutes)
+                .UseNavigation(CsMarkup2Example.Routes.Register)
             );
         MainWindow = builder.Window;
 
@@ -77,7 +79,7 @@ public class App : Application
         MainWindow.EnableHotReload();
 #endif
 
-        Host = await builder.NavigateAsync<Shell>();
+        Host = await builder.NavigateAsync<CsMarkup2Example.Shell>();
     }
 
     private static void RegisterRoutes(IViewRegistry views, IRouteRegistry routes)
