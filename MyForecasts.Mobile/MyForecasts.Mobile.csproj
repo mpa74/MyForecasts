@@ -21,6 +21,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CSharpMarkup.WinUI.LiveChartsCore.SkiaSharpView" />
+    <PackageReference Include="LiveChartsCore.SkiaSharpView.Uno.WinUI" />
     <PackageReference Include="Uno.WinUI" />
     <PackageReference Include="Uno.WinUI.Markup" />
     <PackageReference Include="Uno.Material.WinUI.Markup" />

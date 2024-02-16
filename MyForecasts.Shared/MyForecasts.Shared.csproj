@@ -9,4 +9,9 @@
     <None Include="**\*" Exclude="obj\**;bin\**;*.csproj" />
     <None Update="AppHead.xaml.cs" DependentUpon="AppHead.xaml" />
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CSharpMarkup.WinUI.LiveChartsCore.SkiaSharpView" />
+    <PackageReference Include="LiveChartsCore.SkiaSharpView.Uno.WinUI" />
+  </ItemGroup>
 </Project>

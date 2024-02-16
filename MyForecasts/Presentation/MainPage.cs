@@ -20,7 +20,7 @@ public sealed partial class MainPage : Page
                         .Children(
                             new TextBox()
                                 .Text(x => x.Bind(() => vm.Demo.EventName).Mode(BindingMode.TwoWay))
-                                .PlaceholderText("Your event name:"),
+                                .PlaceholderText("Your event names:"),
                             new TextBlock().Text(x=> x.Bind(() => vm.Demo.EventDescription)),
 
                             new NumberBox().Header("Value")
