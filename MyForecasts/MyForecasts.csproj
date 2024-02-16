@@ -56,14 +56,13 @@
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Condition="$(TargetFramework.Contains('windows10'))" />
   </ItemGroup>
 
-
-  <ItemGroup>
-    <ProjectReference Include="..\MyForecasts.DataContracts\MyForecasts.DataContracts.csproj" />
-  </ItemGroup>
-
   <ItemGroup>
     <UnoDspImportColors Include="Styles\*.zip" Generator="CSharp" />
     <EmbeddedResource Include="appsettings.json" />
     <EmbeddedResource Include="appsettings.*.json" DependentUpon="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyForecasts.DataContracts\MyForecasts.DataContracts.csproj" />
   </ItemGroup>
 </Project>
