@@ -1,7 +1,7 @@
-﻿using LiveChartsCore;
-using LiveChartsCore.SkiaSharpView.SKCharts;
-using LiveChartsCore.SkiaSharpView.WinUI;
+﻿using LiveChartsCore.SkiaSharpView.WinUI;
+using Uno.Extensions.Markup.Generator;
 
+[assembly: GenerateMarkupForAssembly(typeof(CartesianChart))]
 namespace MyForecasts.Presentation;
 
 public sealed partial class SecondPage : Page
@@ -25,11 +25,11 @@ public sealed partial class SecondPage : Page
                     .HorizontalAlignment(HorizontalAlignment.Center)
                     .VerticalAlignment(VerticalAlignment.Center),
                 
-                
                 new CartesianChart()
                     .Grid(row:2)
                     .Name("DataSeries")
-                    
+                    .Series(() => vm.MySeries)
+                
                     
                 )
             )
